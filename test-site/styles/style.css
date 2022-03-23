@@ -1,0 +1,71 @@
+/* This is a rule, or ruleset.
+p - the selector. Here, we are styling <p> elements.
+color : red; - a declaration.
+color - a property of <p> elements that we want to style
+red - the value for the color property.
+
+Each ruleset must have { } around it 
+Each declaration must end in ;
+Each declaration must have propert : value
+
+You can also specify multiple selectors for a ruleset
+*/
+
+/* 
+p, li, h1 {
+    color: red;
+  } */
+  
+/* Types of selectors:
+p           Element selector - specify html elements
+#my-id      ID selector - every html element has a unique ID
+.my-class   Class selector - there can be multiple instances of a single class in html
+img[src]    Attribute selector - selects elements that have the specified attribute
+a:hover     Pseudo-class selector - selects the element, but only when its in the specified state (element:state)
+*/
+
+
+
+  html {
+    font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
+    font-family: "Comfortaa", cursive; /* this should be the rest of the output you got from Google fonts */
+
+    background-color : rgb(145, 202, 255);
+  }
+  
+  h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+  
+  p, li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+  }
+
+  body {
+    width: 600px;
+
+    /* two values here! first is top/bottom, second is horizontal */
+    margin: 0 auto;
+    background-color: #FF9500;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+  }
+  
+  h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #00539F;
+    text-shadow: 3px 3px 1px black;
+  }
+
+  /* you must display: block in order for img to respect the margin setting. This is because img is default to inline */
+  img {
+    display: block;
+    margin: 0 auto;
+    
+    width:500px;
+  }
+  
